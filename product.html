@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Products | Hindustan Tradetech</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed-dim": "#bac7e1",
+                        "tertiary-fixed-dim": "#ffb77d",
+                        "surface-container": "#eeeeee",
+                        "inverse-primary": "#a7c8ff",
+                        "tertiary": "#331700",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#a7c8ff",
+                        "surface": "#f9f9f9",
+                        "primary-container": "#003366",
+                        "secondary-fixed": "#d6e3fe",
+                        "surface-variant": "#e2e2e2",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-container": "#ea8000",
+                        "on-secondary-container": "#58657c",
+                        "on-tertiary-fixed": "#2f1500",
+                        "on-primary-container": "#799dd6",
+                        "outline": "#737780",
+                        "on-primary-fixed-variant": "#1f477b",
+                        "outline-variant": "#c3c6d1",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed-variant": "#3b475d",
+                        "inverse-on-surface": "#f1f1f1",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#f9f9f9",
+                        "tertiary-container": "#512900",
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "secondary": "#525f75",
+                        "surface-container-low": "#f3f3f3",
+                        "surface-tint": "#3a5f94",
+                        "on-secondary-fixed": "#0f1c2f",
+                        "primary-fixed": "#d5e3ff",
+                        "on-surface": "#1a1c1c",
+                        "surface-dim": "#dadada",
+                        "inverse-surface": "#2f3131",
+                        "surface-container-highest": "#e2e2e2",
+                        "background": "#f9f9f9",
+                        "secondary-container": "#d6e3fe",
+                        "on-background": "#1a1c1c",
+                        "on-tertiary-fixed-variant": "#6e3900",
+                        "surface-container-high": "#e8e8e8",
+                        "primary": "#001e40",
+                        "on-surface-variant": "#43474f",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed": "#001b3c",
+                        "tertiary-fixed": "#ffdcc3",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .blueprint-grid {
+            background-image: radial-gradient(circle, #c3c6d1 1px, transparent 1px);
+            background-size: 40px 40px;
+            opacity: 0.1;
+        }
+    </style>
+</head>
+
+<body class="bg-surface text-on-surface font-body">
+    <div class="relative flex h-auto min-h-screen w-full flex-col bg-slate-50 group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <!-- Shared Header -->
+            <header
+                class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-outline-variant/20 px-10 py-3 bg-surface-container-lowest">
+                <div class="flex items-center gap-8">
+                    <div class="flex items-center gap-4 text-primary">
+                        <div class="size-6 text-primary">
+                            <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6_330)">
+                                    <path clip-rule="evenodd"
+                                        d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z"
+                                        fill="currentColor" fill-rule="evenodd"></path>
+                                </g>
+                                <defs>
+                                    <clippath id="clip0_6_330">
+                                        <rect fill="white" height="48" width="48"></rect>
+                                    </clippath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h2 class="text-on-surface text-lg font-bold leading-tight tracking-[-0.015em]">Hindustan
+                            Tradetech</h2>
+                    </div>
+                    <div class="flex items-center gap-9">
+                        <a class="text-on-surface text-sm font-medium leading-normal" href="#">Home</a>
+                        <a class="text-on-surface text-sm font-bold border-b-2 border-primary leading-normal"
+                            href="#">Products</a>
+                        <a class="text-on-surface text-sm font-medium leading-normal" href="#">Industries</a>
+                        <a class="text-on-surface text-sm font-medium leading-normal" href="#">About Us</a>
+                        <a class="text-on-surface text-sm font-medium leading-normal" href="#">Contact</a>
+                    </div>
+                </div>
+                <div class="flex flex-1 justify-end gap-8">
+                    <label class="flex flex-col min-w-40 !h-10 max-w-64">
+                        <div class="flex w-full flex-1 items-stretch rounded h-full">
+                            <div
+                                class="text-on-surface-variant flex border-none bg-surface-container-high items-center justify-center pl-4 rounded-l border-r-0">
+                                <span class="material-symbols-outlined">search</span>
+                            </div>
+                            <input
+                                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded text-on-surface focus:outline-0 focus:ring-0 border-none bg-surface-container-high h-full placeholder:text-on-surface-variant px-4 rounded-l-none border-l-0 pl-2 text-base font-normal"
+                                placeholder="Search Materials" value="" />
+                        </div>
+                    </label>
+                    <button
+                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-on-primary text-sm font-bold leading-normal tracking-[0.015em] shadow-sm">
+                        <span class="truncate">Get a Quote</span>
+                    </button>
+                </div>
+            </header>
+            <main class="flex-1">
+                <!-- Hero Section -->
+                <section class="relative h-[480px] w-full flex items-center bg-primary overflow-hidden">
+                    <div class="absolute inset-0 z-0">
+                        <img alt="Industrial insulation production"
+                            class="w-full h-full object-cover opacity-30 grayscale"
+                            data-alt="close-up of industrial copper windings and electrical insulation components in a high-tech manufacturing facility with cold blue lighting"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpyNGHWlQQXe311eSpA5TCArhEf6gsNKnhutmRehmeuz_zIvz0iSTTS1pNx2TfBHNHn-hmnOrllNU0vHnZ7ilw5ysz0Z4-ItQ7iOOuzTLNh1PqPxgCr8fwnaYo38zk6c2cEJIGddapL88sEbWG19CSdBb_kAXWvVYyvGcGNzTQM8B5AgcNacHmGqA5ee94Ql72EkLw_VVfGkssRzVxnu7Wc-v08mqlkvc5CMhZ49Frjx_P1U5jOXMIfd7XGmzP2OfitQMxFac9inM" />
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-r from-primary to-transparent opacity-80 z-10"></div>
+                    <div class="relative z-20 px-20 max-w-[1280px] mx-auto w-full">
+                        <div class="max-w-[720px] flex flex-col gap-4">
+                            <h1 class="text-on-primary text-5xl font-black leading-tight tracking-[-0.033em]">
+                                Electrical Insulation Materials
+                            </h1>
+                            <h2 class="text-primary-fixed-dim text-xl font-normal leading-relaxed">
+                                High-Performance Insulation Solutions for Industrial Applications
+                            </h2>
+                            <div class="flex gap-4 mt-4">
+                                <button
+                                    class="bg-on-tertiary-container text-on-primary px-6 py-3 rounded-lg font-bold shadow-lg hover:brightness-110 transition-all">
+                                    Download Catalogue
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Intro Section -->
+                <section class="bg-surface-container-lowest py-16">
+                    <div class="max-w-[1280px] mx-auto px-20">
+                        <div class="border-l-4 border-on-tertiary-container pl-8">
+                            <p class="text-on-surface text-2xl font-medium leading-relaxed max-w-[960px]">
+                                Hindustan Tradetech Pvt. Ltd. manufactures a wide range of high-performance electrical
+                                insulation materials, catering to diverse industrial requirements across all product
+                                categories.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!-- Product Overview Grid -->
+                <section class="bg-surface-container-low py-20 relative overflow-hidden">
+                    <div class="blueprint-grid absolute inset-0 pointer-events-none"></div>
+                    <div class="max-w-[1280px] mx-auto px-20 relative z-10">
+                        <div class="grid grid-cols-3 gap-8">
+                            <div class="bg-surface-container-lowest p-8 shadow-sm border-t-2 border-primary">
+                                <div class="text-on-tertiary-container mb-4">
+                                    <span class="material-symbols-outlined text-4xl"
+                                        style="font-variation-settings: 'FILL' 1;">shield_with_heart</span>
+                                </div>
+                                <h3 class="text-primary text-lg font-bold mb-2">Excellent electrical insulation
+                                    properties</h3>
+                                <p class="text-on-surface-variant text-sm">High dielectric strength ensuring safety and
+                                    reliability in critical systems.</p>
+                            </div>
+                            <div class="bg-surface-container-lowest p-8 shadow-sm border-t-2 border-primary">
+                                <div class="text-on-tertiary-container mb-4">
+                                    <span class="material-symbols-outlined text-4xl"
+                                        style="font-variation-settings: 'FILL' 1;">thermostat</span>
+                                </div>
+                                <h3 class="text-primary text-lg font-bold mb-2">Superior thermal stability</h3>
+                                <p class="text-on-surface-variant text-sm">Maintains structural integrity under extreme
+                                    temperature variations.</p>
+                            </div>
+                            <div class="bg-surface-container-lowest p-8 shadow-sm border-t-2 border-primary">
+                                <div class="text-on-tertiary-container mb-4">
+                                    <span class="material-symbols-outlined text-4xl"
+                                        style="font-variation-settings: 'FILL' 1;">construction</span>
+                                </div>
+                                <h3 class="text-primary text-lg font-bold mb-2">High mechanical strength</h3>
+                                <p class="text-on-surface-variant text-sm">Engineered for durability against abrasion,
+                                    chemical exposure, and tension.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Product Categories -->
+                <section class="py-20 bg-surface">
+                    <div class="max-w-[1280px] mx-auto px-20">
+                        <div class="flex flex-col gap-24">
+                            <!-- 1. Insulation Papers & Films -->
+                            <div class="grid grid-cols-12 gap-12 items-start">
+                                <div class="col-span-5 flex flex-col gap-6 sticky top-24">
+                                    <span
+                                        class="text-on-tertiary-container font-bold text-xs uppercase tracking-widest">Category
+                                        01</span>
+                                    <h2 class="text-4xl font-black text-primary">Insulation Papers &amp; Films</h2>
+                                    <p class="text-on-surface-variant leading-relaxed">Specialized high-grade paper and
+                                        film solutions designed for high-voltage insulation and thermal barrier
+                                        applications in motors and transformers.</p>
+                                    <div class="flex flex-col gap-3">
+                                        <h4 class="text-primary font-bold text-sm">Key Products</h4>
+                                        <div class="flex flex-wrap gap-2">
+                                            <span
+                                                class="bg-secondary-container text-on-secondary-container px-3 py-1 text-xs font-semibold rounded">Nomex®
+                                                Paper</span>
+                                            <span
+                                                class="bg-secondary-container text-on-secondary-container px-3 py-1 text-xs font-semibold rounded">Polyester
+                                                Film</span>
+                                            <span
+                                                class="bg-secondary-container text-on-secondary-container px-3 py-1 text-xs font-semibold rounded">Kapton®
+                                                Polyimide</span>
+                                            <span
+                                                class="bg-secondary-container text-on-secondary-container px-3 py-1 text-xs font-semibold rounded">Craft
+                                                Paper</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-span-7 flex flex-col gap-6">
+                                    <img alt="Insulation paper rolls"
+                                        class="w-full aspect-video object-cover rounded shadow-md"
+                                        data-alt="precise stacks of translucent electrical insulation films and yellow nomex paper rolls in a laboratory setting"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAo22NblReM0pBc6jSHQrB59IEFWt5I7G-LlbRsgHe-27XVghntnrO6KtEnVf1W2qKed5Mqqjiww6zYOoAfKhwI84TjP0luxATC_8dH2Pzzs3qrc7_IsuF1qs_FU9z1X9Lnv-rqgFI2XeJclbg2IOoaqXLz2cmR4XhvE49No1mxYkc2n0gg1nWl9-FDWL7UnI4mGHwz8J8gTNW9rOXjgUtkgU49tMj_qNr-WGRvsI40_GOzxoxFfw_H5pYlqA3ggnoxVeWrORYVfs" />
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div class="bg-surface-container-low p-6">
+                                            <h5 class="text-primary font-bold mb-2 flex items-center gap-2"><span
+                                                    class="material-symbols-outlined text-sm">star</span> Features</h5>
+                                            <ul class="text-sm text-on-surface-variant space-y-2">
+                                                <li>• Excellent dielectric strength</li>
+                                                <li>• High thermal resistance</li>
+                                                <li>• Moisture resistant properties</li>
+                                            </ul>
+                                        </div>
+                                        <div class="bg-surface-container-low p-6">
+                                            <h5 class="text-primary font-bold mb-2 flex items-center gap-2"><span
+                                                    class="material-symbols-outlined text-sm">settings_input_component</span>
+                                                Applications</h5>
+                                            <ul class="text-sm text-on-surface-variant space-y-2">
+                                                <li>• Motor slot insulation</li>
+                                                <li>• Transformer winding</li>
+                                                <li>• Capacitor dielectric</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2. Insulation Sleeves -->
+                            <div class="grid grid-cols-12 gap-12 items-start pt-12 border-t border-outline-variant/20">
+                                <div class="col-span-7 flex flex-col gap-6">
+                                    <img alt="Sleeving products"
+                                        class="w-full aspect-video object-cover rounded shadow-md"
+                                        data-alt="macro photograph of braided fiberglass sleeving and silicone coated insulation tubes in various diameters with industrial backdrop"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFa9VqRKFRAE4XMaaLrxxeK9PiXQ7hs0xkDpvK1pQa8-RmtE-3C9AhrkE5MMeGtx_JIN5mDYXSm6Gf8Au832aJqGDhveFFN8cBtia8oHxjpKWh6-KjbTKuw15MX_Wvb9CW3eBWC-OM43rBq83k1GUTmXi3cTGCuxffGq9Jn45r_2KZmaqK0oPuah9WjGem_s1O47zBvGOnFE_gkzzWM6q14bGGzMoZL3FYqIs_fVR8OgRydkgi0QvY2r_QLpZvxVzkzNye5l1acCk" />
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div class="bg-surface-container-low p-6">
+                                            <h5 class="text-primary font-bold mb-2 flex items-center gap-2"><span
+                                                    class="material-symbols-outlined text-sm">bolt</span> Performance
+                                            </h5>
+                                            <ul class="text-sm text-on-surface-variant space-y-2">
+                                                <li>• High flexibility &amp; expandability</li>
+                                                <li>• Flame retardant (UL rated)</li>
+                                                <li>• Chemical &amp; oil resistance</li>
+                                            </ul>
+                                        </div>
+                                        <div class="bg-surface-container-low p-6">
+                                            <h5 class="text-primary font-bold mb-2 flex items-center gap-2"><span
+                                                    class="material-symbols-outlined text-sm">hub</span> Use Cases</h5>
+                                            <ul class="text-sm text-on-surface-variant space-y-2">
+                                                <li>• Wire harness protection</li>
+                                                <li>• Lead wire insulation</li>
+                                                <li>• Busbar insulation</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-span-5 flex flex-col gap-6 sticky top-24">
+                                    <span
+                                        class="text-on-tertiary-container font-bold text-xs uppercase tracking-widest">Category
+                                        02</span>
+                                    <h2 class="text-4xl font-black text-primary">Insulation Sleeves</h2>
+                                    <p class="text-on-surface-variant leading-relaxed">Extensive range of braided
+                                        fiberglass, silicone, and heat-shrinkable sleeves providing mechanical and
+                                        thermal protection for electrical conductors.</p>
+                                    <div class="flex flex-col gap-3">
+                                        <h4 class="text-primary font-bold text-sm">Available Options</h4>
+                                        <div class="flex flex-wrap gap-2">
+                                            <span
+                                                class="bg-secondary-container text-on-secondary-container px-3 py-1 text-xs font-semibold rounded">Silicone
+                                                Fiberglass</span>
+                                            <span
+                                                class="bg-secondary-container text-on-secondary-container px-3 py-1 text-xs font-semibold rounded">PVC
+                                                Sleeving</span>
+                                            <span
+                                                class="bg-secondary-container text-on-secondary-container px-3 py-1 text-xs font-semibold rounded">Heat
+                                                Shrink Tubes</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 3. Flexible Laminated Materials -->
+                            <div class="grid grid-cols-12 gap-12 items-start pt-12 border-t border-outline-variant/20">
+                                <div class="col-span-5 flex flex-col gap-6 sticky top-24">
+                                    <span
+                                        class="text-on-tertiary-container font-bold text-xs uppercase tracking-widest">Category
+                                        03</span>
+                                    <h2 class="text-4xl font-black text-primary">Flexible Laminated Materials</h2>
+                                    <p class="text-on-surface-variant leading-relaxed">Composite materials bonding
+                                        multiple layers for optimized thermal and dielectric performance, specifically
+                                        NMN and DMD laminates.</p>
+                                    <div class="flex flex-col gap-3">
+                                        <h4 class="text-primary font-bold text-sm">Key Products</h4>
+                                        <div class="flex flex-wrap gap-2">
+                                            <span
+                                                class="bg-secondary-container text-on-secondary-container px-3 py-1 text-xs font-semibold rounded">DMD
+                                                (Class F)</span>
+                                            <span
+                                                class="bg-secondary-container text-on-secondary-container px-3 py-1 text-xs font-semibold rounded">NMN
+                                                (Class H)</span>
+                                            <span
+                                                class="bg-secondary-container text-on-secondary-container px-3 py-1 text-xs font-semibold rounded">Polyester
+                                                Laminates</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-span-7 flex flex-col gap-6">
+                                    <img alt="Laminated products"
+                                        class="w-full aspect-video object-cover rounded shadow-md"
+                                        data-alt="multi-layered flexible composite insulation sheets with visible texture and precision cut edges for industrial application"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUd1WdpzwZ9M6XZY016jVClugwJLbMZIlNd77MVi62LjwD23q5gMV1vTTd_tLlLnyLNY2jFH7zin5j03r8dvi4gjqPA1mgXVlt76LDZZ4VTuoZQQUyjyAYPf_gTq9PiIu8KA_gSy58l76a22x9AM7b-IRn3wAnX9isddIBRsXM83eNm_K_BRSJ8MIwg_Im9jlf9pP-sOSq0esV9mokJyWx_lZahqGCF2MQY0dAC4ZQno31Ro2-Ucw6C9KSXQPFdBkY5bWLq2OK3l0" />
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div class="bg-surface-container-low p-6">
+                                            <h5 class="text-primary font-bold mb-2 flex items-center gap-2"><span
+                                                    class="material-symbols-outlined text-sm">layers</span> Features
+                                            </h5>
+                                            <ul class="text-sm text-on-surface-variant space-y-2">
+                                                <li>• Multi-layer composite build</li>
+                                                <li>• Balanced stiffness &amp; flexibility</li>
+                                                <li>• Enhanced puncture resistance</li>
+                                            </ul>
+                                        </div>
+                                        <div class="bg-surface-container-low p-6">
+                                            <h5 class="text-primary font-bold mb-2 flex items-center gap-2"><span
+                                                    class="material-symbols-outlined text-sm">factory</span>
+                                                Applications</h5>
+                                            <ul class="text-sm text-on-surface-variant space-y-2">
+                                                <li>• Phase insulation</li>
+                                                <li>• Inter-turn insulation</li>
+                                                <li>• Dry type transformers</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 4-7 Combined Grid for Secondary Categories -->
+                            <div class="pt-12 border-t border-outline-variant/20">
+                                <h3 class="text-2xl font-bold text-primary mb-12">Additional Specialized Components</h3>
+                                <div class="grid grid-cols-2 gap-8">
+                                    <!-- Laminated Sheets -->
+                                    <div
+                                        class="bg-surface-container-lowest p-8 rounded shadow-sm border-l-4 border-primary flex flex-col gap-4">
+                                        <h4 class="text-xl font-bold text-primary">Laminated Sheets</h4>
+                                        <p class="text-sm text-on-surface-variant">Rigid structural insulation including
+                                            Epoxy Fiberglass (G10/G11) and Phenolic Paper/Fabric sheets for panel boards
+                                            and switchgears.</p>
+                                        <div
+                                            class="flex items-center gap-4 text-xs font-bold text-on-tertiary-container">
+                                            <span class="flex items-center gap-1"><span
+                                                    class="material-symbols-outlined text-sm">precision_manufacturing</span>
+                                                SWITCHGEARS</span>
+                                            <span class="flex items-center gap-1"><span
+                                                    class="material-symbols-outlined text-sm">electric_bolt</span>
+                                                BUSBAR SUPPORTS</span>
+                                        </div>
+                                    </div>
+                                    <!-- Electrical Tapes -->
+                                    <div
+                                        class="bg-surface-container-lowest p-8 rounded shadow-sm border-l-4 border-primary flex flex-col gap-4">
+                                        <h4 class="text-xl font-bold text-primary">Electrical Tapes</h4>
+                                        <p class="text-sm text-on-surface-variant">High-performance adhesive tapes:
+                                            Glass Cloth, Polyester, Kapton, and Mica tapes for wrapping and securing
+                                            windings.</p>
+                                        <div
+                                            class="flex items-center gap-4 text-xs font-bold text-on-tertiary-container">
+                                            <span class="flex items-center gap-1"><span
+                                                    class="material-symbols-outlined text-sm">inventory_2</span> COIL
+                                                WRAPPING</span>
+                                            <span class="flex items-center gap-1"><span
+                                                    class="material-symbols-outlined text-sm">verified</span> HIGH TEMP
+                                                BONDING</span>
+                                        </div>
+                                    </div>
+                                    <!-- Die Cuts -->
+                                    <div
+                                        class="bg-surface-container-lowest p-8 rounded shadow-sm border-l-4 border-primary flex flex-col gap-4">
+                                        <h4 class="text-xl font-bold text-primary">Die Cuts &amp; Custom Components</h4>
+                                        <p class="text-sm text-on-surface-variant">Custom-engineered shapes and
+                                            precision-stamped parts from any of our insulation materials to fit specific
+                                            hardware designs.</p>
+                                        <div
+                                            class="flex items-center gap-4 text-xs font-bold text-on-tertiary-container">
+                                            <span class="flex items-center gap-1"><span
+                                                    class="material-symbols-outlined text-sm">architecture</span> CUSTOM
+                                                GEOMETRY</span>
+                                            <span class="flex items-center gap-1"><span
+                                                    class="material-symbols-outlined text-sm">straighten</span>
+                                                PRECISION TOLERANCE</span>
+                                        </div>
+                                    </div>
+                                    <!-- Labels & Ribbons -->
+                                    <div
+                                        class="bg-surface-container-lowest p-8 rounded shadow-sm border-l-4 border-primary flex flex-col gap-4">
+                                        <h4 class="text-xl font-bold text-primary">Labels &amp; Ribbons</h4>
+                                        <p class="text-sm text-on-surface-variant">Industrial identification solutions
+                                            including thermal transfer ribbons and high-durability labels resistant to
+                                            heat and solvents.</p>
+                                        <div
+                                            class="flex items-center gap-4 text-xs font-bold text-on-tertiary-container">
+                                            <span class="flex items-center gap-1"><span
+                                                    class="material-symbols-outlined text-sm">label</span> ASSET
+                                                TRACKING</span>
+                                            <span class="flex items-center gap-1"><span
+                                                    class="material-symbols-outlined text-sm">print</span> THERMAL
+                                                PRINTING</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- CTA Section -->
+                <section class="bg-primary-container py-24 relative overflow-hidden">
+                    <div class="absolute inset-0 blueprint-grid opacity-20"></div>
+                    <div class="max-w-[1280px] mx-auto px-20 text-center relative z-10">
+                        <h2 class="text-on-primary text-4xl font-black mb-8">Access Our Full Technical Specifications
+                        </h2>
+                        <p class="text-on-primary-container text-lg max-w-[720px] mx-auto mb-10">
+                            Get detailed datasheets and chemical compatibility charts for our entire insulation material
+                            range.
+                        </p>
+                        <button
+                            class="bg-on-tertiary-container text-on-primary text-lg font-bold px-10 py-4 rounded-lg shadow-xl flex items-center gap-3 mx-auto hover:scale-105 transition-transform">
+                            <span class="material-symbols-outlined">download</span>
+                            Download Product Catalogue
+                        </button>
+                    </div>
+                </section>
+            </main>
+            <!-- Footer -->
+            <footer class="bg-primary text-on-primary py-16 px-10 border-t border-primary-container">
+                <div class="max-w-[1280px] mx-auto grid grid-cols-4 gap-12">
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-center gap-4">
+                            <div class="size-8 text-on-primary">
+                                <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_6_330)">
+                                        <path clip-rule="evenodd"
+                                            d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z"
+                                            fill="currentColor" fill-rule="evenodd"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <h2 class="text-lg font-bold">Hindustan Tradetech</h2>
+                        </div>
+                        <p class="text-on-primary-container text-sm leading-relaxed">
+                            Leading manufacturer of high-performance electrical insulation materials for global
+                            industrial standards.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-6 text-on-tertiary-container">Quick Links</h4>
+                        <ul class="flex flex-col gap-3 text-sm text-on-primary-container">
+                            <li><a class="hover:text-on-primary" href="#">Home</a></li>
+                            <li><a class="hover:text-on-primary" href="#">Products</a></li>
+                            <li><a class="hover:text-on-primary" href="#">Industries</a></li>
+                            <li><a class="hover:text-on-primary" href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-6 text-on-tertiary-container">Products</h4>
+                        <ul class="flex flex-col gap-3 text-sm text-on-primary-container">
+                            <li><a class="hover:text-on-primary" href="#">Insulation Papers</a></li>
+                            <li><a class="hover:text-on-primary" href="#">Insulation Sleeves</a></li>
+                            <li><a class="hover:text-on-primary" href="#">Laminated Sheets</a></li>
+                            <li><a class="hover:text-on-primary" href="#">Custom Die Cuts</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-6 text-on-tertiary-container">Contact Us</h4>
+                        <div class="flex flex-col gap-4 text-sm text-on-primary-container">
+                            <p class="flex items-start gap-3">
+                                <span class="material-symbols-outlined text-sm mt-1">location_on</span>
+                                Registered Office, India
+                            </p>
+                            <p class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-sm">mail</span>
+                                info@hindustantradetech.com
+                            </p>
+                            <p class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-sm">call</span>
+                                +91 123 456 7890
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="max-w-[1280px] mx-auto mt-16 pt-8 border-t border-primary-container text-xs text-on-primary-container flex justify-between">
+                    <p>© 2024 Hindustan Tradetech Pvt. Ltd. All rights reserved.</p>
+                    <div class="flex gap-6">
+                        <a class="hover:text-on-primary" href="#">Privacy Policy</a>
+                        <a class="hover:text-on-primary" href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
