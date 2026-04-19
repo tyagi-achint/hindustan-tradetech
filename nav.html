@@ -1,0 +1,76 @@
+<header class="mobile-header">
+  <a class="mobile-header__brand" href="#">
+    <img
+      class="brand-logo"
+      src="images/Logo.svg"
+      alt="Hindustan Tradetech"
+    />
+  </a>
+  <button
+    type="button"
+    class="mobile-header__menu"
+    id="mobile-menu-toggle"
+    aria-controls="side-nav-shell"
+    aria-expanded="false"
+    aria-label="Open menu"
+  >
+    <span class="material-symbols-outlined mobile-header__menu-icon" aria-hidden="true">menu</span>
+  </button>
+</header>
+
+<nav class="top-nav" aria-label="Primary">
+  <div class="top-nav__inner">
+    <a class="top-nav__brand" href="#">
+      <img
+        class="brand-logo"
+        src="images/Logo.svg"
+        alt="Hindustan Tradetech"
+      />
+    </a>
+    <div class="top-nav__links">
+      <a class="top-nav__link top-nav__link--active" href="#">Home</a>
+      <a class="top-nav__link" href="#">Products</a>
+      <a class="top-nav__link" href="#">About Us</a>
+    </div>
+    <button type="button" class="btn-gradient top-nav__cta">Get Quote</button>
+  </div>
+</nav>
+
+<div
+  class="side-nav-shell"
+  id="side-nav-shell"
+  data-open="false"
+  aria-hidden="true"
+  inert
+>
+  <button type="button" class="side-nav-backdrop" aria-label="Close menu"></button>
+  <nav class="side-nav" aria-label="Mobile menu">
+    <div class="side-nav__header">
+      <a class="side-nav__brand" href="#">
+        <img
+          class="brand-logo brand-logo--drawer"
+          src="images/Logo.svg"
+          alt="Hindustan Tradetech"
+        />
+      </a>
+      <div class="side-nav__tagline">Engineering Excellence</div>
+    </div>
+    <div class="side-nav__menu">
+      <a class="side-nav__item side-nav__item--active" href="#">
+        <span class="material-symbols-outlined">home</span>
+        Home
+      </a>
+      <a class="side-nav__item" href="#">
+        <span class="material-symbols-outlined">precision_manufacturing</span>
+        Products
+      </a>
+      <a class="side-nav__item" href="#">
+        <span class="material-symbols-outlined">info</span>
+        About Us
+      </a>
+    </div>
+    <div class="side-nav__footer">
+      <button type="button" class="btn-gradient">Get Quote</button>
+    </div>
+  </nav>
+</div>
