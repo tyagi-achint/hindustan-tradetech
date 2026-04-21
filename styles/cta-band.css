@@ -1,10 +1,8 @@
-.about-cta,
 .cta-band {
   padding: var(--section-space-mobile) 0;
   background: var(--color-on-tertiary-container);
 }
 
-.about-cta__inner,
 .cta-band__inner {
   max-width: var(--max-xl);
   margin: 0 auto;
@@ -17,32 +15,27 @@
 }
 
 @media (min-width: 768px) {
-  .about-cta__inner,
   .cta-band__inner {
     flex-direction: row;
   }
 }
 
-.about-cta__text,
 .cta-band__text {
   color: #fff;
 }
 
-.about-cta__text h2,
 .cta-band__text h2 {
   margin: 0 0 0.5rem;
   font-size: var(--fs-h2-desktop);
   font-weight: 900;
 }
 
-.about-cta__text p,
 .cta-band__text p {
   margin: 0;
   font-size: 1.125rem;
   color: #ffdcc3;
 }
 
-.about-cta__btn,
 .cta-band__btn {
   display: inline-flex;
   align-items: center;
@@ -62,7 +55,6 @@
   transition: transform 0.15s;
 }
 
-.about-cta__btn:hover,
 .cta-band__btn:hover {
   transform: scale(1.03);
 }

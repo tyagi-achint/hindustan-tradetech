@@ -440,9 +440,6 @@ body.about-page {
   flex-shrink: 0;
   width: 3.5rem;
   height: 3.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 0.5rem;
   background: #e8e8e8;
 }
@@ -471,9 +468,6 @@ body.about-page {
   border-radius: 50%;
   overflow: hidden;
   background: #e8e8e8;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .about-quality__visual::before {
