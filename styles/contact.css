@@ -8,34 +8,32 @@ body.contact-page {
 
 .contact-main {
   width: 100%;
-  padding: 72px 1rem 3rem;
+  padding: calc(var(--layout-nav-offset) + var(--space-8)) var(--container-pad-mobile) var(--space-12);
 }
 
 @media (min-width: 768px) {
   .contact-main {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: var(--container-pad-desktop);
+    padding-right: var(--container-pad-desktop);
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .contact-main {
-    padding-bottom: 5.5rem;
+    padding-bottom: var(--layout-mobile-safe-bottom);
   }
 }
 
 .contact-main__inner {
-  max-width: var(--max-2xl);
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: var(--space-12);
 }
 
 @media (min-width: 1024px) {
   .contact-main__inner {
     flex-direction: row;
-    gap: 6rem;
+    gap: calc(var(--space-12) * 2);
     align-items: flex-start;
   }
 
@@ -209,7 +207,7 @@ body.contact-page {
   background: linear-gradient(135deg, #001e40 0%, #003366 100%);
   color: var(--color-on-primary);
   font-family: inherit;
-  font-size: 0.875rem;
+  font-size: var(--fs-button);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;

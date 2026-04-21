@@ -1,4 +1,6 @@
 :root {
+  --font-size-base: 16px;
+
   --color-background: #f9f9f9;
   --color-on-surface: #1a1c1c;
   --color-on-surface-variant: #43474f;
@@ -18,6 +20,70 @@
   --color-primary-fixed-dim: #a7c8ff;
   --radius: 0.125rem;
   --radius-card: 0.25rem;
-  --max-2xl: 1536px;
-  --max-xl: 1280px;
+
+  --bp-mobile-max: 767px;
+  --bp-tablet-min: 768px;
+  --bp-tablet-max: 1023px;
+  --bp-desktop-min: 1024px;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  --section-space-mobile: 4rem;
+  --section-space-tablet: 4.5rem;
+  --section-space-desktop: 6rem;
+  --section-space-lg: 8rem;
+
+  --container-pad-mobile: 1rem;
+  --container-pad-tablet: 1.5rem;
+  --container-pad-desktop: 2rem;
+
+  --container-mobile: 100%;
+  --container-tablet: 95%;
+  --container-desktop-max: 80rem;
+  --container-content-max: 78rem;
+  --max-2xl: 96rem;
+  --max-xl: 80rem;
+
+  --grid-cols-mobile: 4;
+  --grid-cols-tablet: 8;
+  --grid-cols-desktop: 12;
+
+  --lh-h1: 1.2;
+  --lh-h2: 1.25;
+  --lh-h3: 1.3;
+  --lh-h4: 1.35;
+  --lh-body: 1.5;
+  --lh-small: 1.4;
+
+  --fs-h1-mobile: 2rem;
+  --fs-h1-tablet: 2.5rem;
+  --fs-h1-desktop: 3rem;
+  --fs-h2-mobile: 1.75rem;
+  --fs-h2-tablet: 2rem;
+  --fs-h2-desktop: 2.25rem;
+  --fs-h3-mobile: 1.25rem;
+  --fs-h3-tablet: 1.5rem;
+  --fs-h3-desktop: 1.75rem;
+  --fs-h4-desktop: 1.375rem;
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --fs-button: 0.875rem;
+
+  --fw-h1: 900;
+  --fw-h2: 700;
+  --fw-h3: 600;
+  --fw-h4: 600;
+  --fw-body: 400;
+  --fw-small: 400;
+  --fw-button: 700;
+
+  --layout-nav-offset: 4.5rem;
+  --layout-mobile-safe-bottom: 5.5rem;
 }

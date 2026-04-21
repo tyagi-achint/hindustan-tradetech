@@ -9,20 +9,20 @@ body.about-page {
 
 .about-main {
   width: 100%;
-  padding-top: 72px;
+  padding-top: var(--layout-nav-offset);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .about-main {
-    padding-bottom: 5.5rem;
+    padding-bottom: var(--layout-mobile-safe-bottom);
   }
 }
 
 .about-inner {
   max-width: var(--max-xl);
   margin: 0 auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: var(--container-pad-tablet);
+  padding-right: var(--container-pad-tablet);
 }
 
 .about-hero {
@@ -105,7 +105,7 @@ body.about-page {
 }
 
 .about-section {
-  padding: 6rem 0;
+  padding: var(--section-space-desktop) 0;
 }
 
 .about-section--grid {

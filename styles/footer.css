@@ -7,7 +7,7 @@
   max-width: var(--max-2xl);
   margin-left: auto;
   margin-right: auto;
-  padding: 1.5rem 2rem;
+  padding: var(--space-6) var(--container-pad-desktop);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -95,7 +95,7 @@
   font-weight: 700;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .site-footer__inner {
     padding-bottom: 3.5rem;
   }
