@@ -30,9 +30,7 @@ function currentNavKey() {
   const file = (window.location.pathname.split("/").pop() || "index.html").toLowerCase();
   const path = window.location.pathname.toLowerCase();
   if (file === "index.html" || file === "home.html" || file === "") return "home";
-  if (file === "product.html" || file === "product_2.html" || path.includes("/product/")) {
-    return "products";
-  }
+  if (file === "product.html") return "products";
   if (file === "about-us.html") return "about";
   if (file === "contact.html") return "contact";
   return "";

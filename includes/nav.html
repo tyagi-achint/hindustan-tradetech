@@ -29,7 +29,46 @@
     </a>
     <div class="top-nav__links">
       <a class="top-nav__link" data-nav-key="home" href="index.html">Home</a>
-      <a class="top-nav__link" data-nav-key="products" href="product.html">Products</a>
+      <div class="top-nav__dropdown">
+        <a class="top-nav__link top-nav__link--has-menu" data-nav-key="products" href="product.html">
+          Products
+          <span class="material-symbols-outlined top-nav__link-chevron" aria-hidden="true">expand_more</span>
+        </a>
+        <div class="top-nav__mega" role="menu" aria-label="Product categories">
+          <a class="top-nav__mega-item" role="menuitem" href="product/flexible-laminates.html">
+            <span class="material-symbols-outlined" aria-hidden="true">layers</span>
+            Flexible Laminates
+          </a>
+          <a class="top-nav__mega-item" role="menuitem" href="product/insulation-film-paper.html">
+            <span class="material-symbols-outlined" aria-hidden="true">description</span>
+            Insulation Film &amp; Paper
+          </a>
+          <a class="top-nav__mega-item" role="menuitem" href="product/insulation-sleeves.html">
+            <span class="material-symbols-outlined" aria-hidden="true">settings_input_hdmi</span>
+            Insulation Sleeves
+          </a>
+          <a class="top-nav__mega-item" role="menuitem" href="product/laminated-sheets.html">
+            <span class="material-symbols-outlined" aria-hidden="true">inventory_2</span>
+            Laminated Sheets
+          </a>
+          <a class="top-nav__mega-item" role="menuitem" href="product/adhesive-tapes.html">
+            <span class="material-symbols-outlined" aria-hidden="true">horizontal_rule</span>
+            Adhesive Tapes
+          </a>
+          <a class="top-nav__mega-item" role="menuitem" href="product/labels-ribbons.html">
+            <span class="material-symbols-outlined" aria-hidden="true">label</span>
+            Labels &amp; Ribbons
+          </a>
+          <a class="top-nav__mega-item" role="menuitem" href="product/die-cuts.html">
+            <span class="material-symbols-outlined" aria-hidden="true">precision_manufacturing</span>
+            Die Cuts
+          </a>
+          <a class="top-nav__mega-item" role="menuitem" href="product/splice-terminals.html">
+            <span class="material-symbols-outlined" aria-hidden="true">electrical_services</span>
+            Splice Terminals &amp; Crimping
+          </a>
+        </div>
+      </div>
       <a class="top-nav__link" data-nav-key="about" href="about-us.html">About Us</a>
     </div>
     <a class="btn-gradient top-nav__cta" href="contact.html">Get Quote</a>
@@ -60,10 +99,62 @@
         <span class="material-symbols-outlined">home</span>
         Home
       </a>
-      <a class="side-nav__item" data-nav-key="products" href="product.html">
-        <span class="material-symbols-outlined">precision_manufacturing</span>
-        Products
-      </a>
+      <div class="side-nav__group">
+        <a class="side-nav__item" data-nav-key="products" href="product.html">
+          <span class="material-symbols-outlined" aria-hidden="true">precision_manufacturing</span>
+          Products
+        </a>
+        <ul class="side-nav__submenu">
+          <li>
+            <a class="side-nav__subitem" href="product/flexible-laminates.html">
+              <span class="material-symbols-outlined" aria-hidden="true">layers</span>
+              Flexible Laminates
+            </a>
+          </li>
+          <li>
+            <a class="side-nav__subitem" href="product/insulation-film-paper.html">
+              <span class="material-symbols-outlined" aria-hidden="true">description</span>
+              Insulation Film &amp; Paper
+            </a>
+          </li>
+          <li>
+            <a class="side-nav__subitem" href="product/insulation-sleeves.html">
+              <span class="material-symbols-outlined" aria-hidden="true">settings_input_hdmi</span>
+              Insulation Sleeves
+            </a>
+          </li>
+          <li>
+            <a class="side-nav__subitem" href="product/laminated-sheets.html">
+              <span class="material-symbols-outlined" aria-hidden="true">inventory_2</span>
+              Laminated Sheets
+            </a>
+          </li>
+          <li>
+            <a class="side-nav__subitem" href="product/adhesive-tapes.html">
+              <span class="material-symbols-outlined" aria-hidden="true">horizontal_rule</span>
+              Adhesive Tapes
+            </a>
+          </li>
+          <li>
+            <a class="side-nav__subitem" href="product/labels-ribbons.html">
+              <span class="material-symbols-outlined" aria-hidden="true">label</span>
+              Labels &amp; Ribbons
+            </a>
+          </li>
+          <li>
+            <a class="side-nav__subitem" href="product/die-cuts.html">
+              <span class="material-symbols-outlined" aria-hidden="true">precision_manufacturing</span>
+              Die Cuts
+            </a>
+          </li>
+          <li>
+            <a class="side-nav__subitem" href="product/splice-terminals.html">
+              <span class="material-symbols-outlined" aria-hidden="true">electrical_services</span>
+              Splice Terminals &amp; Crimping
+            </a>
+          </li>
+        </ul>
+      </div>
       <a class="side-nav__item" data-nav-key="about" href="about-us.html">
         <span class="material-symbols-outlined">info</span>
         About Us
