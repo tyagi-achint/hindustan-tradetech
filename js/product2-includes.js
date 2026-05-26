@@ -16,6 +16,7 @@ function currentNavKey() {
   const file = (window.location.pathname.split("/").pop() || "index.html").toLowerCase();
   if (file === "index.html" || file === "home.html" || file === "") return "home";
   if (file === "product.html" || file === "product_2.html") return "products";
+  if (window.location.pathname.includes("/product2/")) return "products";
   if (file === "about-us.html") return "about";
   if (file === "contact.html") return "contact";
   return "";
@@ -79,21 +80,41 @@ function initMobileNav() {
   });
 }
 
+function prefixRootLinks(root) {
+  if (!root) return;
+  root.querySelectorAll("a[href]").forEach(function (anchor) {
+    const href = anchor.getAttribute("href");
+    if (
+      !href ||
+      href.startsWith("http") ||
+      href.startsWith("#") ||
+      href.startsWith("../") ||
+      href.startsWith("mailto:") ||
+      href.startsWith("tel:")
+    ) {
+      return;
+    }
+    anchor.setAttribute("href", "../" + href);
+  });
+}
+
 async function loadIncludes() {
   const [navRes, footerRes] = await Promise.all([
-    fetch("includes/nav.html"),
-    fetch("includes/footer.html"),
+    fetch("../includes/nav.html"),
+    fetch("../includes/footer.html"),
   ]);
   if (!navRes.ok) throw new Error("includes/nav.html: " + navRes.status);
   if (!footerRes.ok) throw new Error("includes/footer.html: " + footerRes.status);
   const [navHtml, footerHtml] = await Promise.all([navRes.text(), footerRes.text()]);
   injectFragment("site-nav", navHtml);
   injectFragment("site-footer", footerHtml);
+  prefixRootLinks(document.getElementById("site-nav"));
+  prefixRootLinks(document.getElementById("site-footer"));
   initNavActive();
   initFooterYear();
   initMobileNav();
 }
 
 loadIncludes().catch(function (err) {
-  console.error("[includes]", err);
+  console.error("[product2-includes]", err);
 });
