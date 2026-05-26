@@ -1,5 +1,19 @@
 "use strict";
 
+function includeBase() {
+  const path = window.location.pathname.toLowerCase();
+  if (path.includes("/product/")) return "../";
+  return "";
+}
+
+function rewriteRootRelativePaths(html) {
+  const base = includeBase();
+  if (!base) return html;
+  return html
+    .replace(/\shref="(?!https?:|\/|#|mailto:|tel:|\.\.)([^"]*)"/gi, ' href="' + base + '$1"')
+    .replace(/\ssrc="(?!https?:|\/|data:|\.\.)([^"]*)"/gi, ' src="' + base + '$1"');
+}
+
 function injectFragment(targetId, htmlString) {
   const target = document.getElementById(targetId);
   if (!target) return;
@@ -14,8 +28,11 @@ function initFooterYear() {
 
 function currentNavKey() {
   const file = (window.location.pathname.split("/").pop() || "index.html").toLowerCase();
+  const path = window.location.pathname.toLowerCase();
   if (file === "index.html" || file === "home.html" || file === "") return "home";
-  if (file === "product.html" || file === "product_2.html") return "products";
+  if (file === "product.html" || file === "product_2.html" || path.includes("/product/")) {
+    return "products";
+  }
   if (file === "about-us.html") return "about";
   if (file === "contact.html") return "contact";
   return "";
@@ -80,15 +97,16 @@ function initMobileNav() {
 }
 
 async function loadIncludes() {
+  const base = includeBase();
   const [navRes, footerRes] = await Promise.all([
-    fetch("includes/nav.html"),
-    fetch("includes/footer.html"),
+    fetch(base + "includes/nav.html"),
+    fetch(base + "includes/footer.html"),
   ]);
   if (!navRes.ok) throw new Error("includes/nav.html: " + navRes.status);
   if (!footerRes.ok) throw new Error("includes/footer.html: " + footerRes.status);
   const [navHtml, footerHtml] = await Promise.all([navRes.text(), footerRes.text()]);
-  injectFragment("site-nav", navHtml);
-  injectFragment("site-footer", footerHtml);
+  injectFragment("site-nav", rewriteRootRelativePaths(navHtml));
+  injectFragment("site-footer", rewriteRootRelativePaths(footerHtml));
   initNavActive();
   initFooterYear();
   initMobileNav();
